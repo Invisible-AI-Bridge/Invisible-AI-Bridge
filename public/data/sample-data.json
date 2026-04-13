@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Quantum Mechanics Lecture Note",
+    "raw_text": "QM Intro: Wave function is psi. Schrodinger eq is i hbar d/dt psi = H psi. Uncertainty principle dx dp >= hbar/2. Electrons are particles and waves.",
+    "normalized_markdown": "# Quantum Mechanics Introduction\n\n## 1. Wave Function\n- **Symbol**: $\\psi$\n- **Definition**: Describes the quantum state of a system.\n\n## 2. Schrödinger Equation\n- **Formula**: $i\\hbar\\frac{\\partial}{\\partial t}\\psi = \\hat{H}\\psi$\n- **Context**: Time-dependent Schrödinger equation.\n\n## 3. Heisenberg Uncertainty Principle\n- **Formula**: $\\Delta x \\Delta p \\ge \\frac{\\hbar}{2}$\n- **Meaning**: Limitation on measuring position and momentum simultaneously.\n\n## 4. Wave-Particle Duality\n- Particles like electrons exhibit both wave and particle properties.",
+    "hallucination_reduction": 98.5
+  },
+  {
+    "id": 2,
+    "title": "Organic Chemistry Basics",
+    "raw_text": "Organic chem is carbon. Alkanes are single bonds, CnH2n+2. Alkenes double, CnH2n. Alkynes triple, CnH2n-2. Functional groups like OH is alcohol, COOH is acid.",
+    "normalized_markdown": "# Organic Chemistry Fundamentals\n\n## 1. Carbon Backbone\nOrganic chemistry is primarily centered on carbon-based compounds.\n\n## 2. Hydrocarbon Classifications\n| Type | Bond Type | General Formula |\n| :--- | :--- | :--- |\n| **Alkanes** | Single Bond | $C_nH_{2n+2}$ |\n| **Alkenes** | Double Bond | $C_nH_{2n}$ |\n| **Alkynes** | Triple Bond | $C_nH_{2n-2}$ |\n\n## 3. Key Functional Groups\n- **Alcohol**: $-OH$ group.\n- **Carboxylic Acid**: $-COOH$ group.",
+    "hallucination_reduction": 99.2
+  }
+]
