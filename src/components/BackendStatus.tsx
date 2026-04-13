@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Activity, CheckCircle2, XCircle } from 'lucide-react';
+import { BACKEND_URL } from '@/lib/config';
 
 export default function BackendStatus() {
   const [status, setStatus] = useState<'loading' | 'ok' | 'error'>('loading');
@@ -10,8 +11,7 @@ export default function BackendStatus() {
   useEffect(() => {
     async function checkHealth() {
       try {
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
-        const res = await fetch(`${backendUrl}/api/health`);
+        const res = await fetch(`${BACKEND_URL}/api/health`);
         if (res.ok) {
           const data = await res.json();
           setStatus('ok');

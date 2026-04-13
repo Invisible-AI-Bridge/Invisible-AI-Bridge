@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Upload, ArrowRight, Loader2, CheckCircle2, FileText, Zap } from "lucide-react";
+import { BACKEND_URL } from "@/lib/config";
 
 interface SampleData {
   id: number;
@@ -46,8 +47,7 @@ export default function Converter() {
     
     try {
       // Real API call to the backend
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
-      const res = await fetch(`${backendUrl}/api/convert`, {
+      const res = await fetch(`${BACKEND_URL}/api/convert`, {
         method: "POST",
         body: formData,
       });
